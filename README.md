@@ -1,24 +1,21 @@
 # project_insight_house_rocket
 ![crop-hand-holding-house-near-coins](https://user-images.githubusercontent.com/107287165/175185016-1ac7ddca-a12a-42da-b223-46184753a414.jpg)
 
-The resulting app can be accessed [here](https://kc-insights.herokuapp.com/)
+
 
 # 1. Problema de Negócio
 A House Rocket é uma plataforma digital que tem como modelo de negócio, a compra e a venda de imóveis usando tecnologia.
-O CEO da House Rocket gostaria de maximizar a receita da empresa encontrando boas oportunidades de negócio.
+O CEO da House Rocket gostaria de maximizar a receita da empresa encontrando boas oportunidades de negócio.Sua principal estratégia é comprar boas casas em ótimas localizações com preços baixos e depois revendê-las posteriormente à preços mais altos. Quanto maior a diferença entre a compra e a venda, maior o lucro da empresa e, portanto, maior sua receita.
 
-Sua principal estratégia é comprar boas casas em ótimas localizações com preços baixos e depois revendê-las posteriormente à preços mais altos. Quanto maior a diferença entre a compra e a venda, maior o lucro da empresa e, portanto, maior sua receita.
-
-Entretanto, as casas possuem muitos atributos que as tornam mais ou menos atrativas aos compradores e vendedores e a localização e o período do ano também podem influenciar os preços.
-
-Portanto, desenvolvi uma análise exploratória buscando identificar casas com potencial de compra e venda. Além disso desenvolvi um site hospedado em Cloud para que o time de negócio possa realizar filtros e visualizar os dados, assim como também a localização de cada imóvel.
+Portanto,uma análise exploratória foi desenvolvida para identidficar imóveis com potencial de compra e venda. Além disso, um site em cloud foi utilizado para mostrar a análise de outra maneira.
+The resulting app can be accessed [here](https://kc-insights.herokuapp.com/)
 
 # 2. Suposições de Negócio.
 As seguintes suposições para este problema de negócio foram tomadas:
 
--> Id’s repetidos serão mantidos para a análise exploratória caracterizando imóveis sendo anunciados em dias diferentes. Para os relatórios foram descartados id’s duplicados com o objetivo de melhorar a experiência do time de negócios em suas análises. 
+-> Id’s repetidos foram removidos pois foram considerados como erros na atualização do banco de dados. Foi mantido apenas o último ID nessas duplicadas devido a atualização mais recente.
 
--> Os andares de cada imóvel foram tratados como números inteiros, números flutuantes serão arredondados ao número inteiro anterior.
+-> As estações receberam muita importância no resultado final.
 
 # Lista de Atributos
 Para o processo de análise foi utilizado um dataset público hospedado no [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction).
@@ -38,7 +35,6 @@ Este dataset possui as seguintes variáveis:
 |waterfront | Variável indicadora para imóveis com visualização ao mar (1) ou não (0). |
 |view | Um índice de 0 a 4 de quão boa era a visualização da propriedade. |
 |condition |  Um índice de 1 a 5 sobre o estado das moradias, 1 indica propriedade degradada e 5 excelente. |
-|grade | Uma nota geral é dada à unidade habitacional com base no sistema de classificação de King County. O índice de 1 a 13, onde 1-3 representa baixo nível da qualidade de construção e design do edifício, 7 tem um nível médio de construção e design e 11-13 tem um nível de construção e design de alta qualidade. |
 |sqft_above | Os pés quadrados do espaço habitacional interior acima do nível do solo. |
 |sqft_basement | Os pés quadrados do espaço habitacional interior abaixo do nível do solo. |
 |yr_built | Ano de construção da propriedade. |
@@ -50,89 +46,93 @@ Este dataset possui as seguintes variáveis:
 |sqft_lot15 | Tamanho médio dos terrenos em metros quadrados para as 15 casas mais próximas. |
 
 # 3. A solução
-A problemática destaca a necessidade de análise dos imóveis no banco de dados, porém o time de negócio não possui tempo hábil para realizar a pesquisa em um volume tão grande. Para solucionar este projeto desenvolvi dois relatórios, o primeiro com sugestões de compra por imóvel juntamente com o valor recomendado, para o segundo relatório conterá sugestão de venda indicando os melhores momentos para venda e o valor recomendado.
+Para solucionar esta questão, foi elaborado alguns relatórios, o primeiro com sugestões de compra por imóvel juntamente com o valor recomendado, para o segundo relatório conterá sugestão de venda indicando os melhores momentos para venda e o valor recomendado.
 
 A estrutura para recomendação de compras leva em consideração a mediana de preço do imóvel por região, portanto imóveis com preço abaixo da mediana, boas condições e avaliações serão os recomendados.
 
 A estrutura utilizada para a venda de imóveis considera a mediana do preço de imóveis e a sazonalidade (temporada) do ano, estes atributos permitem recomendar vendas com base na mediana de preço da região e os melhores meses para anunciar. 
-
-Os relatórios foram disponibilizados em Excel, mas para melhor comodidade a equipe de negócio, também foi entregue um site que permita filtrar as informações no relatório. O resultado se encontra neste [site](https://house-rocket-analysis-cds.herokuapp.com/).
 
 # 4. Estratégia de Solução
 ![image](https://user-images.githubusercontent.com/107287165/175185090-7fc87ee7-706e-4fc9-b01b-48c5728ffdc4.png)
 
 Minha estratégia para resolver esse desafio foi:
 
-**Step 01. Data Description:** Realizar limpeza e identificar outliers que comprometam a análise dos dados.
+**Step 01.** Determinar o problema de negócio
 
-**Step 02. Feature Engineering:** Derivar novos atributos com base nas variáveis originais para descrever melhor o fenômeno a ser compreendido.
+**Step 02.** Carregar e inspecionar os dados
 
-**Step 03. Exploratory Data Analysis:** Explorar os dados para encontrar insights e entender melhor o impacto das variáveis.
+**Step 03.** Limpeza e transformação de dados
 
-**Step 04. Business Value:** Transcrever a análise produzida em um resultado de negócio.
+**Step 04.** Análise exploratória
 
-**Step 05. Deploy Model to Production:** Publicar os relatórios em um ambiente web para que outras pessoas ou serviços possam usar os resultados para melhorar a decisão de negócios.
+**Step 05.** Hipóteses 
 
+**Step 06.** Resposta dos problemas de negócios
+
+**Step 07.** Criação do app no heroku 
+
+**Step 08.**  Conclusão
 
 # 5. Top 5 Insights de Negócio
 No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui 5 Insights identificados nos dados.
 
-**Hipótese:** Imóveis com reforma são 30% mais caros na média.
+**H1 - Imóveis que possuem vista para água, são 20% mais caros, na média.**
 
-![image](https://user-images.githubusercontent.com/107287165/175185144-ee7ac0c7-e20b-480c-9715-8a0a0a6830f1.png)
+Falso. Os imóveis com vista são 211.76% mais caros que os imóveis sem vista 
 
-Através do gráfico podemos comprovar que a hipótese é verdadeira, pois imóveis renovados são em média 43.37% mais caros.
+**H2 - Imóveis com data de construção menor que 1955, são 50% mais baratos, na média.**
 
-**Hipótese:** Imóveis vendem 30% mais no verão na média.
+Falso. Imóveis com data de construção menor que 1955 são 1.38% mais baratos que os imóveis construidos após 1955
 
-![image](https://user-images.githubusercontent.com/107287165/175185243-410820b2-189b-4f90-91d5-b55665c4ddaf.png)
+**H3 - Imóveis sem porão (sqft_basement), são 40% maiores do que com porão em media.**
 
-Este Insight nos mostra que o pico de vendas ocorre na primavera com uma diferença de 3% para o verão.
+Hipótese Falsa. Os Imóveis sem porão são maiores em 22.78% comparados a imóveis com porão
 
-**Hipótese:** Imóveis são 20% mais caros no verão na média.
+**H4 - O crescimento do preço dos imóveis YoY (Year over Year) é de 10%**
 
-![image](https://user-images.githubusercontent.com/107287165/175185286-8ff660aa-3836-4e9b-84e7-ea32adcde11f.png)
+Falso. Os imóveis listados em 2015 são mais caros em 0.18% comparados a imóveis de 2014. Como esses são os únicos anos, então conclui-se que a hipótese é falsa.
 
-O gráfico demonstra que imóveis vendem por um preço maior na primavera com uma diferença de 1,07% para o verão.
+**H5  - Imóveis com 3 banheiros tem um crescimento MoM (Month over Month) de 15% em média**
 
-**Hipótese:** Imóveis com banheiros completos são 10% mais caros na média.
+Falso. Os preços aumentam e diminuem no período determinado.
 
-![image](https://user-images.githubusercontent.com/107287165/175187546-9d7f4e72-8fb2-48ff-96ec-a163594a95c7.png)
+**H6 - O preço da casa cai em média 30% a cada nível de condição**
 
-O gráfico demonstra que a hipótese é falsa, pois imóveis com banheiro completo vendem 30.53% a menos do que banheiros sem chuveiro.
+Falso. O preço dos imóveis cai em média 18.50% a cada diminuição no nível de condição. 
 
-**Hipótese:** Para cada andar do imóvel, o preço médio é 20% maior.
+**H7 - As casas ficam 40% mais caras a cada andar**
 
-![image](https://user-images.githubusercontent.com/107287165/175185328-4953654c-8503-4064-88bb-1e5f94a05880.png)
+Falso. Média de preço dos imóveis com 3 andares é menor do que os imóveis com 2 andares.
 
-O gráfico demonstra que a hipótese é falsa, pois o crescimento do preço médio para cada andar é de aproximadamente 16.10%.
+**H8 Imóveis com boa vista ( 3 pra cima) e boas condições ( 3 pra cima ) são 40% mais caras que as casas com boas vistas( 3 pra cima )**
+
+O preço dos imóveis em boas condições e boa vista é em média maior em 177.67 % do que os imóveis com boa vista mas em condições ruins 
+
+**H9 - The YoY rise in price is 10%**
+
+False. Price decreased in 2015. 
+
+**H10 - The MoM rise in prices of houses with 3 bathroom is 15%**
+
+False. Prices decrease and increase at the period comprised in the dataset. The months of January, February and November would be the best moment to invest in houses.
+
+
 
 # 6. Resultados de Negócio
-Os relatórios gerados permitem a equipe de negócios consultar imóveis indicados para compra e venda com a seguinte previsão de faturamento:
+The main objective of this project was to answer two business questions:
+1. Which houses the company should buy and at which price?
+2. Once bought, when should these houses be sold and at which profit margin?
 
-| Compras totais | Vendas totais | Lucro bruto total |
-|----------------|---------------|-------------------|
-| $ 3.535.777.760,00 | 4.561.543.361,20 | 1.025.765.601,20|
+To achieve this goal, the dataset was cleaned, analysed, and some hypothesis were tested. To determine the best real state opportunities, the data was grouped based on location, housing condition and if it was located in front of water. 
 
-O resultado esperado corresponde a 8.578 imóveis recomendados para compra com um lucro por imóvel de aproximadamente $ 119.580,97.
+These features were determined based on previous analysis, in which it was observed that location played one of the most important role in house precification. Along with general location, if a house was near a body of water, its price would also increase. In addition, for all these situations, the housing condition, specially the on lower grades, presented a proeminent effect on prices, decreasing them significantly. 
 
+After grouping the houses on the dataset based on these conditions, the average price was calculated and if a house costed less then this average and it was in good condition, this house would be classified as suitable for purchase. After separating all suitable houses, the profit was calculated. 
 
-Em contraste ao realizar a compra de todos os imóveis traria o seguinte resultado:
+This calculation was done by grouping the good real state opportunities based on all previous features and season. The average prices were calculated and if the buying price were above this average, a profit margin of 10% would be added, otherwise, the profit margin would be at 30%.
 
-| Compras totais | Vendas totais | Lucro bruto total |
-|----------------|---------------|-------------------|
-|$ 11.610.168.601,00 | $ 13.611.834.574,50 | $ 2.001.665.973,50 |
+At the end of such analysis, the resulting dataset contained 10486 houses, its features, the buying and selling prices and the profit margin of each.
 
-Este resultado corresponde a 21.435 com um lucro por imóvel de aproximadamente $ 93.383,06.
-
-A comparação entre os resultados destaca que utilizar a abordagem de compra com base nos indicadores apontados no relatório permite um aumento do lucro de aproximadamente 28,05% por imóvel com um custo total aproximado de 228,36% a menos.
-
-# 7. Produto de Dados
-Para que a equipe de análise de negócios possa ter acesso ao relatório e realizar filtros permitindo identificar os melhores imóveis foi disponibilizado um site hospedado nos serviços Cloud da Heroku. Também consta um mapa que possibilite a rápida localização do imóvel. 
-
-![image](https://user-images.githubusercontent.com/107287165/175185345-beb7fccd-3861-4d75-b535-5f4775fe96d9.png)
-
-O site se encontra [aqui](https://house-rocket-analysis-cds.herokuapp.com/).
 
 # 8. Conclusões
 Podemos concluir que o resultado, para um primeiro ciclo de desenvolvimento, se mostra satisfatório. Foi possível após uma coleta de dados e uma análise completa, identificar alavancas de negócios, elaboração de insights e desenvolver relatórios capazes de responder as perguntas de negócio com os potenciais margens de ganho de aproximadamente 28%. 
