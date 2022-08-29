@@ -1,6 +1,8 @@
 # project_insight_house_rocket
 ![crop-hand-holding-house-near-coins](https://user-images.githubusercontent.com/107287165/175185016-1ac7ddca-a12a-42da-b223-46184753a414.jpg)
 
+The resulting app can be accessed [here](https://kc-insights.herokuapp.com/)
+
 # 1. Problema de Negócio
 A House Rocket é uma plataforma digital que tem como modelo de negócio, a compra e a venda de imóveis usando tecnologia.
 O CEO da House Rocket gostaria de maximizar a receita da empresa encontrando boas oportunidades de negócio.
