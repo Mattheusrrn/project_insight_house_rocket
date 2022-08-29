@@ -128,18 +128,15 @@ No entanto, se apenas os imóveis com 30% de margem de lucro forem vendidos ent�
 
 # 8. Conclusões
 O principal objetivo desse projeto é responder as seguintes perguntas:
-1. Quais imóveis ?
-2. Once bought, when should these houses be sold and at which profit margin?
+1. Quais imóveis a empresa deveria comprar e a que preço?
+2. Depois de comprados, Quando esses imóveis devem ser vendidos e usando qual margem?
 
-To achieve this goal, the dataset was cleaned, analysed, and some hypothesis were tested. To determine the best real state opportunities, the data was grouped based on location, housing condition and if it was located in front of water. 
+Para atingir esse objetivo,o dataset foi limpo, analisado e as hipóteses testadas. Para ter uma visão mais ampla das oportunidades, os dados foram agrupados baseados na localização(zipcode) e condição do imóvel.
 
-These features were determined based on previous analysis, in which it was observed that location played one of the most important role in house precification. Along with general location, if a house was near a body of water, its price would also increase. In addition, for all these situations, the housing condition, specially the on lower grades, presented a proeminent effect on prices, decreasing them significantly. 
+Depois do agrupamento desses imóveis com base nos critérios ditos anteriormente, o preço mediano da localização foi calculado e se o imóvel estivesse abaixo do preço da mediana e em boas condições, o imóvel será classicado como apto para a compra. Depois de responder a primeira pergunta do problema de negócio, levou se em consideração a estação do ano para um adicional de margem na venda. Se o imóvel tivesse preço acima da média da estação, seria adicionado uma margem de 10% na sua venda e no caso de preço abaixo dessa média, a margem subiria para 30%.
 
-After grouping the houses on the dataset based on these conditions, the average price was calculated and if a house costed less then this average and it was in good condition, this house would be classified as suitable for purchase. After separating all suitable houses, the profit was calculated. 
+Podemos concluir que o resultado, para um primeiro ciclo de desenvolvimento, se mostra satisfatório. Foi possível após uma coleta de dados e uma análise completa, identificar alavancas de negócios, elaboração de insights e desenvolver relatórios capazes de responder as perguntas de negócio com os potenciais ganhos mostrados acima.
 
-This calculation was done by grouping the good real state opportunities based on all previous features and season. The average prices were calculated and if the buying price were above this average, a profit margin of 10% would be added, otherwise, the profit margin would be at 30%.
-
-At the end of such analysis, the resulting dataset contained 10486 houses, its features, the buying and selling prices and the profit margin of each.
 
 # 9. Próximos Passos
  Um segundo ciclo de desenvolvimento é indicado para otimizar a estrutura de análise e melhorar a performance dos ganhos, também possibilita observar o problema de diferentes ângulos identificando Insights antes não observados.
