@@ -73,8 +73,8 @@ Minha estratégia para resolver esse desafio foi:
 
 **Step 08.**  Conclusão
 
-# 5. Top 5 Insights de Negócio
-No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui 5 Insights identificados nos dados.
+# 5. Top Insights
+No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui os principais Insights identificados nos dados. Caso deseje visualizar os gráficos, é só clicar aqui [here](https://kc-insights.herokuapp.com/)
 
 **H1 - Imóveis que possuem vista para água, são 20% mais caros, na média.**
 
@@ -104,23 +104,27 @@ Falso. O preço dos imóveis cai em média 18.50% a cada diminuição no nível 
 
 Falso. Média de preço dos imóveis com 3 andares é menor do que os imóveis com 2 andares.
 
-**H8 Imóveis com boa vista ( 3 pra cima) e boas condições ( 3 pra cima ) são 40% mais caras que as casas com boas vistas( 3 pra cima )**
+**H8 - Imóveis com boa vista ( 3 pra cima) e boas condições ( 3 pra cima ) são 40% mais caras que as casas com boas vistas( 3 pra cima )**
 
 O preço dos imóveis em boas condições e boa vista é em média maior em 177.67 % do que os imóveis com boa vista mas em condições ruins 
 
-**H9 - The YoY rise in price is 10%**
+**H9 - Imóveis com reforma são 25% mais caros**
 
-False. Price decreased in 2015. 
+O preço dos imóveis com reforma é em média maior em 43.29 % do que os imóveis sem reforma 
 
-**H10 - The MoM rise in prices of houses with 3 bathroom is 15%**
+**H10 - Imóveis são mais caros em 10% no verão**
 
-False. Prices decrease and increase at the period comprised in the dataset. The months of January, February and November would be the best moment to invest in houses.
+Hipótese Falsa pois os imóveis na primavera são mais caros em 0.73% do que os imóveis no verão
 
 
 
 # 6. Resultados de Negócio
-The main objective of this project was to answer two business questions:
-1. Which houses the company should buy and at which price?
+De acordo com a análise exploratória de dados, cerca de 10505 imóveis foram considerados ideais para uma compra, o que representa 48.61%.Para chegar nesse número, foi necessário filtrar as casas que estavam em boas condições ou seja, com o nivel de condição de 3 para cima, e também com o preço abaixo da mediana da sua área representada pelo zipcode.
+
+
+# 8. Conclusões
+O principal objetivo desse projeto é responder as seguintes perguntas:
+1. Quais imóveis ?
 2. Once bought, when should these houses be sold and at which profit margin?
 
 To achieve this goal, the dataset was cleaned, analysed, and some hypothesis were tested. To determine the best real state opportunities, the data was grouped based on location, housing condition and if it was located in front of water. 
@@ -132,10 +136,6 @@ After grouping the houses on the dataset based on these conditions, the average 
 This calculation was done by grouping the good real state opportunities based on all previous features and season. The average prices were calculated and if the buying price were above this average, a profit margin of 10% would be added, otherwise, the profit margin would be at 30%.
 
 At the end of such analysis, the resulting dataset contained 10486 houses, its features, the buying and selling prices and the profit margin of each.
-
-
-# 8. Conclusões
-Podemos concluir que o resultado, para um primeiro ciclo de desenvolvimento, se mostra satisfatório. Foi possível após uma coleta de dados e uma análise completa, identificar alavancas de negócios, elaboração de insights e desenvolver relatórios capazes de responder as perguntas de negócio com os potenciais margens de ganho de aproximadamente 28%. 
 
 # 9. Próximos Passos
  Um segundo ciclo de desenvolvimento é indicado para otimizar a estrutura de análise e melhorar a performance dos ganhos, também possibilita observar o problema de diferentes ângulos identificando Insights antes não observados.
