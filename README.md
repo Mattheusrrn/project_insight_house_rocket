@@ -121,6 +121,10 @@ Hipótese Falsa pois os imóveis na primavera são mais caros em 0.73% do que os
 # 6. Resultados de Negócio
 De acordo com a análise exploratória de dados, cerca de 10505 imóveis foram considerados ideais para uma compra, o que representa 48.61%.Para chegar nesse número, foi necessário filtrar as casas que estavam em boas condições ou seja, com o nivel de condição de 3 para cima, e também com o preço abaixo da mediana da sua área representada pelo zipcode.
 
+Se esses imóveis forem comprados, o custo total será de $ 4.079.586.744 e o lucro de toda essa operação gira em torno de $752.915.970.
+
+No entanto, se apenas os imóveis com 30% de margem de lucro forem vendidos então a quantidade de imóveis a serem comprados se reduz a 5139 unidades. O lucro vai para $517.435.944.
+
 
 # 8. Conclusões
 O principal objetivo desse projeto é responder as seguintes perguntas:
@@ -140,12 +144,3 @@ At the end of such analysis, the resulting dataset contained 10486 houses, its f
 # 9. Próximos Passos
  Um segundo ciclo de desenvolvimento é indicado para otimizar a estrutura de análise e melhorar a performance dos ganhos, também possibilita observar o problema de diferentes ângulos identificando Insights antes não observados.
 
-**Tópicos a serem explorados:**
-
--> Elaborar um novo plano de recomendação de compras e vendas dos imóveis através da aplicação de Machine Learning.
-
--> Identificar novos Insights que possuem grande correlação para o preço.
-
--> Otimizar a resposta de informações disponíveis no site melhorando a experiência de usuário. 
-
--> Disponibilizar novos filtros para os dados gerados no site para melhorar a análise do time de negócios.
