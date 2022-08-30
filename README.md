@@ -1,5 +1,5 @@
 # project_insight_house_rocket
-![crop-hand-holding-house-near-coins](https://user-images.githubusercontent.com/107287165/175185016-1ac7ddca-a12a-42da-b223-46184753a414.jpg)
+![crop-hand-holding-house-near-coins](https://github.com/ElisaRMA/KC-House-Data-Insights/blob/master/observation-urban-building-business-steel.jpg)
 
 
 
