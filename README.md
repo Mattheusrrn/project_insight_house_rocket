@@ -8,7 +8,7 @@ A House Rocket é uma plataforma digital que tem como modelo de negócio, a comp
 O CEO da House Rocket gostaria de maximizar a receita da empresa encontrando boas oportunidades de negócio.Sua principal estratégia é comprar boas casas em ótimas localizações com preços baixos e depois revendê-las posteriormente à preços mais altos. Quanto maior a diferença entre a compra e a venda, maior o lucro da empresa e, portanto, maior sua receita.
 
 Portanto,uma análise exploratória foi desenvolvida para identificar imóveis com potencial de compra e venda. Além disso, um site em cloud foi utilizado para mostrar a análise de outra maneira.
-The resulting app can be accessed [here](https://https://mengaoanalytics.herokuapp.com/)
+Acesse por [aqui](https://mengaoanalytics.herokuapp.com/)
 
 # 2. Suposições de Negócio.
 As seguintes suposições para este problema de negócio foram tomadas:
