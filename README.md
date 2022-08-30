@@ -74,7 +74,7 @@ Minha estratégia para resolver esse desafio foi:
 **Step 08.**  Conclusão
 
 # 5. Top Insights
-No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui os principais Insights identificados nos dados. Caso deseje visualizar os gráficos, é só clicar [aqui](https://mengaoanalytics.herokuapp.com/))
+No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui os principais Insights identificados nos dados. Caso deseje visualizar os gráficos, é só clicar [aqui.](https://mengaoanalytics.herokuapp.com/)
 
 **H1 - Imóveis que possuem vista para água, são 20% mais caros, na média.**
 
