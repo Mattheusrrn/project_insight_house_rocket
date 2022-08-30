@@ -8,7 +8,7 @@ A House Rocket é uma plataforma digital que tem como modelo de negócio, a comp
 O CEO da House Rocket gostaria de maximizar a receita da empresa encontrando boas oportunidades de negócio.Sua principal estratégia é comprar boas casas em ótimas localizações com preços baixos e depois revendê-las posteriormente à preços mais altos. Quanto maior a diferença entre a compra e a venda, maior o lucro da empresa e, portanto, maior sua receita.
 
 Portanto,uma análise exploratória foi desenvolvida para identificar imóveis com potencial de compra e venda. Além disso, um site em cloud foi utilizado para mostrar a análise de outra maneira.
-The resulting app can be accessed [here](https://kc-insights.herokuapp.com/)
+The resulting app can be accessed [here](https://https://mengaoanalytics.herokuapp.com/)
 
 # 2. Suposições de Negócio.
 As seguintes suposições para este problema de negócio foram tomadas:
@@ -74,7 +74,7 @@ Minha estratégia para resolver esse desafio foi:
 **Step 08.**  Conclusão
 
 # 5. Top Insights
-No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui os principais Insights identificados nos dados. Caso deseje visualizar os gráficos, é só clicar aqui [here](https://kc-insights.herokuapp.com/)
+No processo das análises exploratórias dos dados, foram levantadas algumas hipóteses de negócio que deveriam ser validadas (ou invalidadas) a fim de trazer insights de negócio. Destaco aqui os principais Insights identificados nos dados. Caso deseje visualizar os gráficos, é só clicar [aqui](https://mengaoanalytics.herokuapp.com/))
 
 **H1 - Imóveis que possuem vista para água, são 20% mais caros, na média.**
 
