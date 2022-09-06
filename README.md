@@ -123,7 +123,7 @@ De acordo com a análise exploratória de dados, cerca de 10505 imóveis foram c
 Como o objetivo da empresa é a melhor venda possível, então foi estabelecido que,a partir dos imóveis aptos a compra do primeiro relatório, os imóveis com preço abaixo da mediana do preço da estação do ano em que foi listado seriam colocados a venda com uma margem de 30%. Assim, com 30% de margem de lucro a quantidade de imóveis a serem comprados se reduz a 5139 unidades. O lucro vai para $517.435.944.
 
 
-# 8. Conclusões
+# 7. Conclusões
 O principal objetivo desse projeto é responder as seguintes perguntas:
 1. Quais imóveis a empresa deveria comprar e a que preço?
 2. Depois de comprados, Quando esses imóveis devem ser vendidos e usando qual margem?
@@ -135,6 +135,6 @@ Depois do agrupamento desses imóveis com base nos critérios ditos anteriorment
 Podemos concluir que o resultado, para um primeiro ciclo de desenvolvimento, se mostra satisfatório. Foi possível após uma coleta de dados e uma análise completa, identificar alavancas de negócios, elaboração de insights e desenvolver relatórios capazes de responder as perguntas de negócio com os potenciais ganhos mostrados acima.
 
 
-# 9. Próximos Passos
+# 8. Próximos Passos
  Um segundo ciclo de desenvolvimento é indicado para otimizar a estrutura de análise e melhorar a performance dos ganhos, também possibilita observar o problema de diferentes ângulos identificando Insights antes não observados.
 
